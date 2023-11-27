@@ -1,0 +1,42 @@
+
+
+<div class="container-fluid">
+  <div class="col-6">
+    <div *ngFor="let c of conferencias" class="col mb-2">
+    <table id="Upcoming Conferences" class="table">
+      <thead class="h2" style="background-color: aquamarine">
+        Upcoming Conferences
+        <tr>
+          <th class="h4" style="font-weight: bolder;">id</th>
+          <th class="h4" style="font-weight: bolder;">Name</th>
+          <th class="h4" style="font-weight: bolder;">Starts</th>
+          <th class="h4" style="font-weight: bolder;">Ends</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let c of conferencias">
+          <td>
+            <dd style="font-weight: bolder;">{{c.id}}</dd>
+          </td>
+          <td>
+            <dd style="color: aquamarine;">{{c.name}}</dd>
+          </td>
+          <td>
+            <dd>{{c.starts}}</dd>
+          </td>
+          <td>
+            <dd>{{c.ends}}</dd>
+          </td>
+
+        </tr>
+      </tbody>
+      <div class="card-body">
+        <h5 class="card-title">{{ c.starts}}</h5>
+        <p class="card-text">[{{ c.ends }}]</p>
+        <p class="card-text">[{{ c.name }}]</p>
+        <p class="card-text">[{{ c.description }}]</p>
+      </div>
+    </table>
+  
+</div>

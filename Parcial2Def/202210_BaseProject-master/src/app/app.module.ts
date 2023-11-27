@@ -4,8 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConferenciasModule } from './conferencias/conferencias.module';
 //cambiar nombre
-import { CambiarModule } from './cambiar/cambiar.module';
+
 //en caso de que existan relaciones 1 a 1 se debe importar
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { CambiarModule } from './cambiar/cambiar.module';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    CambiarModule, 
+    ConferenciasModule, 
     HttpClientModule
   ],
   providers: [],
